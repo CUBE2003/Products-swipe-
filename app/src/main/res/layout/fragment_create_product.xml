@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/accent"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/addpic"
+            android:background="@color/primary_light" />
+
+        <Button
+            android:id="@+id/buttonSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#000000"
+            android:text="@string/select_image"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            style="@style/EditTextStyle"
+            android:hint="@string/product_name" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            style="@style/EditTextStyle"
+            android:hint="@string/price"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextProductType"
+            style="@style/EditTextStyle"
+            android:hint="@string/product_type" />
+
+        <EditText
+            android:id="@+id/editTextTax"
+            style="@style/EditTextStyle"
+            android:hint="@string/tax"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
